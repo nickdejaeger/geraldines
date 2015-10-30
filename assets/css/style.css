@@ -10,7 +10,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #f05f40;
+    border-color: #FFF; /*#f05f40;*/
     border-width: 3px;
 }
 
@@ -46,7 +46,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    background-color: #000;
 }
 
 .bg-dark {
@@ -60,6 +60,18 @@ p {
 
 section {
     padding: 100px 0;
+}
+
+section#shows {
+    display: table;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #222;
+}
+
+section#shows .container {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 aside {
@@ -96,17 +108,17 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+    color: #777;
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: #000;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: #000!important;
     background-color: transparent;
 }
 
@@ -263,42 +275,44 @@ header .header-content .header-content-inner p {
     margin-top: 0;
 }
 
-#about .section-heading {
+#shows .section-heading {
     
 }
 
-#about h2.section-heading {
+#shows h2.section-heading {
     font-family: 'Shadows Into Light', sans-serif;
     font-size: 70px;
 }
 
-#about h3.section-heading {
+#shows h3.section-heading {
     font-size: 30px;
 }
 
-#about .tourlist {
+#shows .tourlist {
     margin: 100px -15px 0;
     box-shadow: 0px 0px 53px -20px #000;
 }
 
-#about .tourlist .col-lg-12 {
+#shows .tourlist .col-lg-12 {
     padding: 0;
 }
 
-#about .tourlist p {
-    margin: 0;
-    background-color: rgba(255,255,255,0.1);
-    border-bottom: 2px solid rgba(255,255,255,0.3);
-    padding: 10px 0;
+#shows .tourlist ul {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    margin: 0 15px;
+    background-color: #FFF;
+    border-bottom: 1px solid rgba(0,0,0,1);
+    padding: 10px 10px;
     font-size: 14px;
+    line-height: 2;
+    color: #000;
 }
-#about .tourlist div:last-child p {
+#shows .tourlist ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+#shows .tourlist ul:last-child {
     border-bottom: 0;
-}
-
-#about .tourlist p i.fa-circle {
-    font-size: 4px;
-    vertical-align: middle;
 }
 
 .service-box {
@@ -388,7 +402,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #f05f40;
+    color: #000;
 }
 
 .no-gutter > [class*=col-] {
@@ -450,9 +464,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
+    border-color: #000;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #000;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -466,7 +480,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
     border-color: #ed431f;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #777;
 }
 
 .btn-primary:active,
@@ -557,4 +571,9 @@ body {
 #video {
     padding: 0;
     height: 100vh;
+    background-color: #000;
+}
+
+#video iframe {
+    padding: 30px;
 }
