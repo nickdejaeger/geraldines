@@ -19,15 +19,15 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
 }
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #000;
+    text-decoration: none;
 }
 
 h1,
@@ -67,6 +67,7 @@ section#shows {
     width: 100%;
     min-height: 100vh;
     background-color: #222;
+    padding: 0;
 }
 
 section#shows .container {
@@ -150,12 +151,12 @@ aside {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(255,255,255,.3);
-        background-color: transparent;
+        border-color: rgba(0,0,0,.3);
+        background-color: rgba(0,0,0,1);
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: rgba(255,255,255,1);
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -206,7 +207,7 @@ header {
     min-height: 100vh;
     text-align: center;
     color: #fff;
-    background-image: url(../../img/header.jpg);
+    background-image: url(../../img/bg.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -229,6 +230,7 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 700;
+    text-shadow: 0 0 15px #000;
 }
 
 header .header-content .header-content-inner hr {
@@ -290,11 +292,12 @@ header .header-content .header-content-inner p {
 
 #shows .tourlist {
     margin: 100px -15px 0;
-    box-shadow: 0px 0px 53px -20px #000;
+    box-shadow: 0 0 53px -20px #000;
 }
 
-#shows .tourlist .col-lg-12 {
-    padding: 0;
+#shows .tourlist div {
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
 }
 
 #shows .tourlist ul {
@@ -306,6 +309,7 @@ header .header-content .header-content-inner p {
     font-size: 14px;
     line-height: 2;
     color: #000;
+    display: inline-block;
 }
 #shows .tourlist ul li {
     display: inline-block;
@@ -412,7 +416,7 @@ header .header-content .header-content-inner p {
 
 .btn-default {
     border-color: #fff;
-    color: #222;
+    color: #337ab7;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
