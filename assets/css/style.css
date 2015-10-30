@@ -18,6 +18,10 @@ hr.light {
     border-color: #fff;
 }
 
+hr.dark {
+    border-color: #000;
+}
+
 a {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
@@ -68,6 +72,7 @@ section#shows {
     min-height: 100vh;
     background-color: #222;
     padding: 0;
+    background-image: url(../../img/patterns/vintage.png);
 }
 
 section#shows .container {
@@ -241,7 +246,8 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    text-shadow: 1px -1px 1px #000;
+    font-style: italic;
 }
 
 @media(min-width:768px) {
@@ -281,9 +287,30 @@ header .header-content .header-content-inner p {
     
 }
 
+#shows .intro-line {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: 22px;
+    color: #000;
+    margin: 0;
+}
 #shows h2.section-heading {
     font-family: 'Shadows Into Light', sans-serif;
     font-size: 70px;
+    color: #000;
+}
+
+#shows ul {
+    color: #000;
+    list-style: none;
+    color: #000;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+#shows ul li {
+    display: inline-block;
+    padding: 0 5px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-size: 18px;
 }
 
 #shows h3.section-heading {
@@ -292,19 +319,13 @@ header .header-content .header-content-inner p {
 
 #shows .tourlist {
     margin: 100px -15px 0;
-    box-shadow: 0 0 53px -20px #000;
-}
-
-#shows .tourlist div {
-    background-color: rgba(0,0,0,0.5);
-    text-align: center;
 }
 
 #shows .tourlist ul {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    margin: 0 15px;
+    margin: 0;
     background-color: #FFF;
-    border-bottom: 1px solid rgba(0,0,0,1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
     padding: 10px 10px;
     font-size: 14px;
     line-height: 2;
@@ -314,6 +335,7 @@ header .header-content .header-content-inner p {
 #shows .tourlist ul li {
     display: inline-block;
     padding: 0 5px;
+    font-size: 14px;
 }
 #shows .tourlist ul:last-child {
     border-bottom: 0;
@@ -600,4 +622,13 @@ body {
     #contact {
         height: auto;
     }
+}
+
+.next-show {
+    padding: 10px 25px;
+    background-color: #337ab7;
+}
+
+.next-show .arrow-down {
+    line-height: 0;
 }
